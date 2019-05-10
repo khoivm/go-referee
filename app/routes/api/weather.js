@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const fetch = require('node-fetch');
 
-router.post('/weather', (req, res) => {
+router.get('/weather', (req, res) => {
    //build api URL with user zip
    const baseUrl = 'http://api.openweathermap.org/data/2.5/weather?zip=';
    //ENTER YOUR API KEY HERE (make sure to no include < >)
